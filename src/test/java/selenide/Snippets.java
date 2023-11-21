@@ -104,9 +104,11 @@ public class Snippets {
     // complex actions with keybord and mouse, example
     actions().moveToElement($("div")).clickAndHold().moveByOffset(300, 200).release().perform();
 
+
     // old html actions don't work with many modern frameworks
     $("").selectOption("dropdown_option");
     $("").selectRadio("radio_options");
+
 
   }
 
@@ -120,7 +122,8 @@ public class Snippets {
 
 
     //longer timeouts
-    $("").shouldBe(visible, Duration.ofSeconds(30));
+    $("").shouldBe(visible, Duration.ofSeconds(6));
+
 
   }
 
@@ -190,7 +193,9 @@ public class Snippets {
     $$("").shouldHave(sizeLessThan(3));
     $$("").shouldHave(sizeLessThanOrEqual(2));
 
+    for (var e : $$("")) {
 
+    }
   }
 
   void file_operation_examples() throws FileNotFoundException {
